@@ -1,0 +1,188 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Basic HTML5 Template</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+  <!-- your content here... -->
+  <h1> ASD Detection </h1>
+	<!-- <form method="post" action="mailto:alimirzazadeham@gmail.com?subject=Vocabulary Quiz 1" enctype="text/plain"> -->
+	<!-- <form name="search" action="/cgi-bin/data_preprocessing.py" method="get"> -->
+	<form enctype="multipart/form-data" method="get" action="cgi-bin/html_portal.py">
+
+	<p>1. Does your child look at you when you call his/her name? <BR>
+	   <input type="radio" name="q1" value="0">Always
+	   <input type="radio" name="q1" value="0">Usually
+	   <input type="radio" name="q1" value="1">Sometimes
+	   <input type="radio" name="q1" value="1">Rarely
+	   <input type="radio" name="q1" value="1">Never<BR>
+	</p>
+
+	<p>2. How easy is it for you to get eye contact with your child? <BR>
+	   <input type="radio" name="q2" value="0">Very Easy
+	   <input type="radio" name="q2" value="0">Quite Easy
+	   <input type="radio" name="q2" value="1">Quite difficult
+	   <input type="radio" name="q2" value="1">Very difficult
+	   <input type="radio" name="q2" value="1">Impossible<BR>
+	</p>
+
+	<p>3. Does your child point to indicate that s/he wants something? (e.g. a toy that is out of reach) <BR>
+	   <input type="radio" name="q3" value="0">Many times a day
+	   <input type="radio" name="q3" value="0">Few times a day
+	   <input type="radio" name="q3" value="1">Few times a week
+	   <input type="radio" name="q3" value="1">Less than once a week
+	   <input type="radio" name="q3" value="1">Never<BR>
+	</p>
+
+	<p>4. Does your child point to share interest with you? (e.g. poinng at an interesng sight) <BR>
+	   <input type="radio" name="q4" value="0">Many times a day
+	   <input type="radio" name="q4" value="0">Few times a day
+	   <input type="radio" name="q4" value="1">Few times a week
+	   <input type="radio" name="q4" value="1">Less than once a week
+	   <input type="radio" name="q4" value="1">Never<BR>
+	</p>
+
+	<p>5. Does your child pretend? (e.g. care for dolls, talk on a toy phone) <BR>
+	   <input type="radio" name="q5" value="0">Many times a day
+	   <input type="radio" name="q5" value="0">Few times a day
+	   <input type="radio" name="q5" value="1">Few times a week
+	   <input type="radio" name="q5" value="1">Less than once a week
+	   <input type="radio" name="q5" value="1">Never<BR>
+	</p>
+
+	<p>6. Does your child follow where you’re looking? <BR>
+	   <input type="radio" name="q6" value="0">Many times a day
+	   <input type="radio" name="q6" value="0">Few times a day
+	   <input type="radio" name="q6" value="1">Few times a week
+	   <input type="radio" name="q6" value="1">Less than once a week
+	   <input type="radio" name="q6" value="1">Never<BR>
+	</p>
+
+	<p>7. If you or someone else in the family is visibly upset, does your child show signs of wanng to comfort them? (e.g. stroking hair, hugging them) <BR>
+	   <input type="radio" name="q7" value="0">Always
+	   <input type="radio" name="q7" value="0">Usually
+	   <input type="radio" name="q7" value="1">Sometimes
+	   <input type="radio" name="q7" value="1">Rarely
+	   <input type="radio" name="q7" value="1">Never<BR>
+	</p>
+
+	<p>8. Would you describe your child’s first words as: <BR>
+	   <input type="radio" name="q8" value="0">Very typical
+	   <input type="radio" name="q8" value="0">Quite typical
+	   <input type="radio" name="q8" value="1">Slightly unusual
+	   <input type="radio" name="q8" value="1">Very unusual
+	   <input type="radio" name="q8" value="1">My child doesn't speak<BR>
+	</p>
+
+	<p>9. Does your child use simple gestures? (e.g. wave goodbye) <BR>
+	   <input type="radio" name="q9" value="0">Many times a day
+	   <input type="radio" name="q9" value="0">Few times a day
+	   <input type="radio" name="q9" value="1">Few times a week
+	   <input type="radio" name="q9" value="1">Less than once a week
+	   <input type="radio" name="q9" value="1">Never<BR>
+	</p>
+
+	<p>10. Does your child stare at nothing with no apparent purpose? <BR>
+	   <input type="radio" name="q10" value="1">Many times a day
+	   <input type="radio" name="q10" value="1">Few times a day
+	   <input type="radio" name="q10" value="1">Few times a week
+	   <input type="radio" name="q10" value="0">Less than once a week
+	   <input type="radio" name="q10" value="0">Never<BR>
+	</p>
+
+	  <label for="age"> Age </label><br>
+	  <input type="number" id="age" name="age"><br>
+
+		<P>Sex <BR>
+		<input type="radio" name="sex" value="0">Female
+		<input type="radio" name="sex" value="1">Male<BR>
+		</p>
+
+		<P>Ethnicity <BR>
+		<input type="radio" name="ethnicity" value="0">Hispanic
+		<input type="radio" name="ethnicity" value="1">Latino
+		<input type="radio" name="ethnicity" value="2">Native Indian
+		<input type="radio" name="ethnicity" value="3">Others
+		<input type="radio" name="ethnicity" value="4">Pacifica
+		<input type="radio" name="ethnicity" value="5">White European
+		<input type="radio" name="ethnicity" value="6">Asian
+		<input type="radio" name="ethnicity" value="7">Black
+		<input type="radio" name="ethnicity" value="8">Middle Eastern
+		<input type="radio" name="ethnicity" value="9">Mixed
+		<input type="radio" name="ethnicity" value="10">South Asian<BR>
+		</p>
+
+		<P>Born with Jaundice? <BR>
+		<input type="radio" name="jaundice" value="0">No
+		<input type="radio" name="jaundice" value="1">Yes<BR>
+		</p>
+
+		<P>Family Member with ASD History? <BR>
+		<input type="radio" name="asd_history" value="0">No
+		<input type="radio" name="asd_history" value="1">Yes<BR>
+		</p>
+
+		<P>Who is completing the test? <BR>
+		<input type="radio" name="who_completing" value="0">Healthcare Professional
+		<input type="radio" name="who_completing" value="1">Others
+		<input type="radio" name="who_completing" value="2">Self
+		<input type="radio" name="who_completing" value="3">Family Member<BR>
+		</p>
+
+
+
+		<input type="submit" value="Send Form">
+	</form>
+<!-- 
+
+	  <label for="q2"> How easy is it for you to get eye contact with your child? </label><br>
+	  <input type="text" id="q2" name="q2">
+	  <label for="q3"> Does your child point to indicate that s/he wants something? (e.g. a toy that is out of reach)  </label><br>
+	  <input type="text" id="q3" name="q3">
+	  <label for="q4"> Does your child point to share interest with you? (e.g. pointing at an interesting sight) 
+ </label><br>
+	  <input type="text" id="q4" name="q4">
+	  <label for="q5"> Does your child pretend? (e.g. care for dolls, talk on a toy phone) </label><br>
+	  <input type="text" id="q5" name="q5">
+	  <label for="q6"> Does your child follow where you’re looking? </label><br>
+	  <input type="text" id="q6" name="q6">
+	  <label for="q7"> If you or someone else in the family is visibly upset, does your child show signs of wanting to comfort them? (e.g. stroking hair, hugging them)</label><br>
+	  <input type="text" id="q7" name="q7">
+	  <label for="q8"> Would you describe your child’s first words as:  </label><br>
+	  <input type="text" id="q8" name="q8">
+	  <label for="q9"> Does your child use simple gestures? (e.g. wave goodbye)  </label><br>
+	  <input type="text" id="q9" name="q9">
+	  <label for="q10"> Does your child stare at nothing with no apparent purpose?  </label><br>
+	  <input type="text" id="q10" name="q10"> -->
+
+
+	<!-- </form> -->
+
+
+
+
+  <!-- <script src="js/scripts.js"></script> -->
+</body>
+</html>
+
+
