@@ -7,6 +7,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import tree
 from matplotlib import pyplot as plt
+import joblib
 
 data_orig = pd.read_csv('toddler_asd.csv')
 data_orig.replace(to_replace={'Who completed the test':"Health care professional"}, value="Health Care Professional", inplace=True)
@@ -47,10 +48,14 @@ X_train, X_test, y_train, y_test = train_test_split(X_data, y_label, test_size=0
 ## Gradient Boosting Classifier
 clf = GradientBoostingClassifier(n_estimators=100, learning_rate=0.1,max_depth=3, random_state=0).fit(X_train, y_train)
 print("Gradient Boosting Classifier Score: ", clf.score(X_test, y_test))
+joblib.dump(clf, 'gradient_boost.pkl', compress=9)
 
 ## Random Forest Classifier
 forest = RandomForestClassifier(n_estimators=100, max_depth=3, random_state=0).fit(X_train, y_train)
 print("Random Forest Classifier Score: ", forest.score(X_test, y_test))
+
+
+joblib.dump(forest, 'forest.pkl', compress=9)
 
 importances = forest.feature_importances_
 std = np.std([tree.feature_importances_ for tree in forest.estimators_], axis=0)
@@ -69,6 +74,10 @@ print("Decision Tree Classifier Score: ", clf.score(X_test, y_test))
 # plt.figure(figsize=(20,12))
 _, ax = plt.subplots(figsize=(14,8)) # Resize figure
 tree.plot_tree(clf,filled=True,feature_names=all_keys, class_names=['normal','ASD'],ax=ax)
+
+
+
+
 plt.show()
 # plt.savefig("Decision_Tree_Classifier.pdf",dpi=100)
 # bp()
